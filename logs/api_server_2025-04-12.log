@@ -1,0 +1,288 @@
+[2025-04-12T04:23:39.012Z] [INFO] API服务器运行在 http://0.0.0.0:9090/
+[2025-04-12T04:23:39.013Z] [INFO] 可用接口:
+[2025-04-12T04:23:39.014Z] [INFO] - 健康检查: http://localhost:9090/
+[2025-04-12T04:23:39.014Z] [INFO] - 失信查询: http://localhost:9090/api/shixin?name=王博&idcard=620102198705150317
+[2025-04-12T04:23:39.015Z] [INFO] - 转网查询: http://localhost:9090/api/phone/transfer?mobile=13800138000
+[2025-04-12T04:23:39.015Z] [INFO] - 空号检测: http://localhost:9090/api/phone/status?mobile=13800138000
+[2025-04-12T04:23:39.016Z] [INFO] - 在网状态: http://localhost:9090/api/phone/online?mobile=13800138000
+[2025-04-12T04:23:39.016Z] [INFO] 服务器启动成功！
+[2025-04-12T04:23:45.493Z] [INFO] 请求: GET /, 参数: {}
+[2025-04-12T04:29:28.449Z] [INFO] API服务器运行在 http://0.0.0.0:9090/
+[2025-04-12T04:29:28.451Z] [INFO] 可用接口:
+[2025-04-12T04:29:28.451Z] [INFO] - 健康检查: http://localhost:9090/
+[2025-04-12T04:29:28.452Z] [INFO] - 失信查询: http://localhost:9090/api/shixin?name=王博&idcard=620102198705150317
+[2025-04-12T04:29:28.452Z] [INFO] - 转网查询: http://localhost:9090/api/phone/transfer?mobile=13800138000
+[2025-04-12T04:29:28.453Z] [INFO] - 空号检测: http://localhost:9090/api/phone/status?mobile=13800138000
+[2025-04-12T04:29:28.453Z] [INFO] - 在网状态: http://localhost:9090/api/phone/online?mobile=13800138000
+[2025-04-12T04:29:28.453Z] [INFO] 服务器启动成功！
+[2025-04-12T04:29:47.098Z] [INFO] 请求: GET /favicon.ico, 参数: {}
+[2025-04-12T04:29:47.397Z] [INFO] 请求: GET /favicon.ico, 参数: {}
+[2025-04-12T04:29:47.890Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T04:29:47.891Z] [INFO] 转网查询: 13800138000
+[2025-04-12T04:29:48.291Z] [INFO] 请求: GET /favicon.ico, 参数: {}
+[2025-04-12T04:38:48.389Z] [INFO] 请求: GET /favicon.ico, 参数: {}
+[2025-04-12T04:38:48.680Z] [INFO] 请求: GET /favicon.ico, 参数: {}
+[2025-04-12T04:38:49.148Z] [INFO] 请求: GET /, 参数: {}
+[2025-04-12T04:40:22.016Z] [INFO] 请求: GET /favicon.ico, 参数: {}
+[2025-04-12T04:40:22.312Z] [INFO] 请求: GET /favicon.ico, 参数: {}
+[2025-04-12T04:40:23.076Z] [INFO] 请求: GET /, 参数: {}
+[2025-04-12T10:03:36.869Z] [INFO] API服务器运行在 http://0.0.0.0:9090/
+[2025-04-12T10:03:36.870Z] [INFO] 可用地址:
+[2025-04-12T10:03:36.871Z] [INFO] - 测试界面: http://localhost:9090/
+[2025-04-12T10:03:36.871Z] [INFO] 可用API:
+[2025-04-12T10:03:36.872Z] [INFO] - 健康检查: http://localhost:9090/api
+[2025-04-12T10:03:36.872Z] [INFO] - 失信查询: http://localhost:9090/api/shixin?name=王博&idcard=620102198705150317
+[2025-04-12T10:03:36.872Z] [INFO] - 转网查询: http://localhost:9090/api/phone/transfer?mobile=13800138000
+[2025-04-12T10:03:36.873Z] [INFO] - 空号检测: http://localhost:9090/api/phone/status?mobile=13800138000
+[2025-04-12T10:03:36.873Z] [INFO] - 在网状态: http://localhost:9090/api/phone/online?mobile=13800138000
+[2025-04-12T10:03:36.874Z] [INFO] 服务器启动成功！
+[2025-04-12T10:03:53.717Z] [INFO] 请求: GET /favicon.ico, 参数: {}
+[2025-04-12T10:03:54.012Z] [INFO] 请求: GET /favicon.ico, 参数: {}
+[2025-04-12T10:03:54.660Z] [INFO] 请求: GET /, 参数: {}
+[2025-04-12T10:03:55.045Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:03:55.046Z] [INFO] 转网查询: 13800138000
+[2025-04-12T10:03:55.048Z] [INFO] 请求: GET /favicon.ico, 参数: {}
+[2025-04-12T10:03:59.669Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:03:59.670Z] [INFO] 转网查询: 13800138000
+[2025-04-12T10:04:00.447Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:04:00.448Z] [INFO] 转网查询: 13800138000
+[2025-04-12T10:04:00.928Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:04:00.929Z] [INFO] 转网查询: 13800138000
+[2025-04-12T10:04:01.150Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:04:01.152Z] [INFO] 转网查询: 13800138000
+[2025-04-12T10:04:01.319Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:04:01.321Z] [INFO] 转网查询: 13800138000
+[2025-04-12T10:04:01.487Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:04:01.489Z] [INFO] 转网查询: 13800138000
+[2025-04-12T10:04:01.662Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:04:01.663Z] [INFO] 转网查询: 13800138000
+[2025-04-12T10:04:01.838Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:04:01.840Z] [INFO] 转网查询: 13800138000
+[2025-04-12T10:04:01.999Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:04:02.000Z] [INFO] 转网查询: 13800138000
+[2025-04-12T10:04:02.180Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:04:02.182Z] [INFO] 转网查询: 13800138000
+[2025-04-12T10:04:02.358Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:04:02.360Z] [INFO] 转网查询: 13800138000
+[2025-04-12T10:04:02.550Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:04:02.552Z] [INFO] 转网查询: 13800138000
+[2025-04-12T10:04:02.742Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:04:02.744Z] [INFO] 转网查询: 13800138000
+[2025-04-12T10:04:02.911Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:04:02.913Z] [INFO] 转网查询: 13800138000
+[2025-04-12T10:04:03.333Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:04:03.335Z] [INFO] 转网查询: 13800138000
+[2025-04-12T10:04:03.527Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:04:03.529Z] [INFO] 转网查询: 13800138000
+[2025-04-12T10:04:05.350Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:04:05.352Z] [INFO] 转网查询: 13800138000
+[2025-04-12T10:04:08.166Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:04:08.168Z] [INFO] 转网查询: 13800138000
+[2025-04-12T10:04:08.662Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:04:08.664Z] [INFO] 转网查询: 13800138000
+[2025-04-12T10:04:08.838Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:04:08.839Z] [INFO] 转网查询: 13800138000
+[2025-04-12T10:04:09.006Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:04:09.008Z] [INFO] 转网查询: 13800138000
+[2025-04-12T10:04:10.487Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:04:10.489Z] [INFO] 转网查询: 13800138000
+[2025-04-12T10:04:10.679Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:04:10.681Z] [INFO] 转网查询: 13800138000
+[2025-04-12T10:04:12.358Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:04:12.359Z] [INFO] 转网查询: 13800138000
+[2025-04-12T10:04:12.533Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:04:12.535Z] [INFO] 转网查询: 13800138000
+[2025-04-12T10:04:19.646Z] [INFO] 请求: GET /api/shixin, 参数: {"name":"王博","idcard":"620102198705150317"}
+[2025-04-12T10:04:19.648Z] [INFO] 失信人查询: 姓名=王博, 身份证=620102198705150317
+[2025-04-12T10:04:51.816Z] [INFO] 请求: GET /favicon.ico, 参数: {}
+[2025-04-12T10:06:22.842Z] [INFO] 请求: GET /favicon.ico, 参数: {}
+[2025-04-12T10:06:23.125Z] [INFO] 请求: GET /favicon.ico, 参数: {}
+[2025-04-12T10:06:23.792Z] [INFO] 请求: GET /, 参数: {}
+[2025-04-12T10:06:24.103Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:06:24.104Z] [INFO] 转网查询: 13800138000
+[2025-04-12T10:06:27.998Z] [INFO] 请求: GET /api/phone/status, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:06:28.000Z] [INFO] 空号检测: 13800138000
+[2025-04-12T10:06:31.689Z] [INFO] 请求: GET /api/phone/online, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:06:31.691Z] [INFO] 在网状态查询: 13800138000
+[2025-04-12T10:06:33.688Z] [INFO] 请求: GET /api/shixin, 参数: {"name":"王博","idcard":"620102198705150317"}
+[2025-04-12T10:06:33.690Z] [INFO] 失信人查询: 姓名=王博, 身份证=620102198705150317
+[2025-04-12T10:08:59.990Z] [INFO] 请求: GET /, 参数: {}
+[2025-04-12T10:09:00.056Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:09:00.057Z] [INFO] 转网查询: 13800138000
+[2025-04-12T10:09:07.132Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:09:07.135Z] [INFO] 转网查询: 13800138000
+[2025-04-12T10:09:22.566Z] [INFO] 请求: GET /, 参数: {}
+[2025-04-12T10:09:22.626Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:09:22.628Z] [INFO] 转网查询: 13800138000
+[2025-04-12T10:09:23.873Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:09:23.875Z] [INFO] 转网查询: 13800138000
+[2025-04-12T10:09:29.748Z] [INFO] 请求: GET /, 参数: {}
+[2025-04-12T10:09:29.809Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:09:29.810Z] [INFO] 转网查询: 13800138000
+[2025-04-12T10:14:31.636Z] [INFO] API服务器运行在 http://0.0.0.0:9090/
+[2025-04-12T10:14:31.638Z] [INFO] 可用地址:
+[2025-04-12T10:14:31.638Z] [INFO] - 测试界面: http://localhost:9090/
+[2025-04-12T10:14:31.638Z] [INFO] 可用API:
+[2025-04-12T10:14:31.639Z] [INFO] - 健康检查: http://localhost:9090/api
+[2025-04-12T10:14:31.639Z] [INFO] - 失信查询: http://localhost:9090/api/shixin?name=王博&idcard=620102198705150317
+[2025-04-12T10:14:31.639Z] [INFO] - 转网查询: http://localhost:9090/api/phone/transfer?mobile=13800138000
+[2025-04-12T10:14:31.640Z] [INFO] - 空号检测: http://localhost:9090/api/phone/status?mobile=13800138000
+[2025-04-12T10:14:31.640Z] [INFO] - 在网状态: http://localhost:9090/api/phone/online?mobile=13800138000
+[2025-04-12T10:14:31.641Z] [INFO] 服务器启动成功！
+[2025-04-12T10:14:53.270Z] [INFO] 请求: GET /, 参数: {}
+[2025-04-12T10:14:53.608Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:14:53.609Z] [INFO] 转网查询: 13800138000
+[2025-04-12T10:15:00.742Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:15:00.744Z] [INFO] 转网查询: 13800138000
+[2025-04-12T10:15:03.862Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:15:03.864Z] [INFO] 转网查询: 13800138000
+[2025-04-12T10:15:03.868Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13900139000"}
+[2025-04-12T10:15:03.870Z] [INFO] 转网查询: 13900139000
+[2025-04-12T10:15:03.874Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13700137000"}
+[2025-04-12T10:15:03.875Z] [INFO] 转网查询: 13700137000
+[2025-04-12T10:15:23.422Z] [INFO] 请求: GET /api/shixin, 参数: {"name":"王博","idcard":"620102198705150317"}
+[2025-04-12T10:15:23.424Z] [INFO] 失信人查询: 姓名=王博, 身份证=620102198705150317
+[2025-04-12T10:17:07.084Z] [INFO] 请求: GET /api/phone/online, 参数: {"mobile":"13800138000"}
+[2025-04-12T10:17:07.085Z] [INFO] 在网状态查询: 13800138000
+[2025-04-12T10:58:29.308Z] [INFO] 风险查询API服务器运行在 http://0.0.0.0:9090/
+[2025-04-12T10:58:29.313Z] [INFO] 可用API:
+[2025-04-12T10:58:29.314Z] [INFO] - 转网查询: http://localhost:9090/api/phone/transfer?mobile=13800138000
+[2025-04-12T10:58:29.314Z] [INFO] - 空号检测: http://localhost:9090/api/phone/status?mobile=13800138000
+[2025-04-12T10:58:29.314Z] [INFO] - 在网状态: http://localhost:9090/api/phone/online?mobile=13800138000
+[2025-04-12T10:58:29.315Z] [INFO] - 失信查询: http://localhost:9090/api/shixin?name=李明&idcard=110101199003075432
+[2025-04-12T10:58:29.315Z] [INFO] - 订阅接口: POST http://localhost:9090/api/subscribe
+[2025-04-12T10:58:34.979Z] [INFO] 请求: GET /, 参数: {}
+[2025-04-12T10:58:38.753Z] [INFO] 请求: GET /api/shixin, 参数: {"name":"李明","idcard":"110101199003075431"}
+[2025-04-12T10:58:38.754Z] [INFO] 失信人查询: 姓名=李明, 身份证=110101199003075431
+[2025-04-12T10:59:12.880Z] [INFO] 请求: GET /api/shixin, 参数: {"name":"李明","idcard":"110101199003075431"}
+[2025-04-12T10:59:12.881Z] [INFO] 失信人查询: 姓名=李明, 身份证=110101199003075431
+[2025-04-12T10:59:46.426Z] [INFO] 风险查询API服务器运行在 http://0.0.0.0:9090/
+[2025-04-12T10:59:46.430Z] [INFO] 可用API:
+[2025-04-12T10:59:46.431Z] [INFO] - 转网查询: http://localhost:9090/api/phone/transfer?mobile=13800138000
+[2025-04-12T10:59:46.431Z] [INFO] - 空号检测: http://localhost:9090/api/phone/status?mobile=13800138000
+[2025-04-12T10:59:46.432Z] [INFO] - 在网状态: http://localhost:9090/api/phone/online?mobile=13800138000
+[2025-04-12T10:59:46.432Z] [INFO] - 失信查询: http://localhost:9090/api/shixin?name=李明&idcard=110101199003075432
+[2025-04-12T10:59:46.432Z] [INFO] - 订阅接口: POST http://localhost:9090/api/subscribe
+[2025-04-12T10:59:51.584Z] [INFO] 请求: GET /, 参数: {}
+[2025-04-12T10:59:54.430Z] [INFO] 请求: GET /api/shixin, 参数: {"name":"李明","idcard":"110101199003075431"}
+[2025-04-12T10:59:54.431Z] [INFO] 失信人查询: 姓名=李明, 身份证=110101199003075431
+[2025-04-12T11:01:20.920Z] [INFO] 风险查询API服务器运行在 http://0.0.0.0:9090/
+[2025-04-12T11:01:20.926Z] [INFO] 可用API:
+[2025-04-12T11:01:20.926Z] [INFO] - 转网查询: http://localhost:9090/api/phone/transfer?mobile=13800138000
+[2025-04-12T11:01:20.927Z] [INFO] - 空号检测: http://localhost:9090/api/phone/status?mobile=13800138000
+[2025-04-12T11:01:20.927Z] [INFO] - 在网状态: http://localhost:9090/api/phone/online?mobile=13800138000
+[2025-04-12T11:01:20.928Z] [INFO] - 失信查询: http://localhost:9090/api/shixin?name=李明&idcard=110101199003075432
+[2025-04-12T11:01:20.928Z] [INFO] - 订阅接口: POST http://localhost:9090/api/subscribe
+[2025-04-12T11:01:26.818Z] [INFO] 请求: GET /, 参数: {}
+[2025-04-12T11:01:29.048Z] [INFO] 请求: GET /, 参数: {"tab":"transfer"}
+[2025-04-12T11:01:30.339Z] [INFO] 请求: GET /, 参数: {"tab":"status"}
+[2025-04-12T11:01:31.200Z] [INFO] 请求: GET /, 参数: {"tab":"online"}
+[2025-04-12T11:01:32.015Z] [INFO] 请求: GET /, 参数: {"tab":"shixin"}
+[2025-04-12T11:01:35.478Z] [INFO] 请求: GET /api/shixin, 参数: {"name":"李明","idcard":"110101199003075431"}
+[2025-04-12T11:01:35.480Z] [INFO] 失信人查询: 姓名=李明, 身份证=110101199003075431
+[2025-04-12T11:01:37.143Z] [INFO] 请求: GET /, 参数: {"tab":"transfer"}
+[2025-04-12T11:01:37.844Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T11:01:37.845Z] [INFO] 转网查询: 13800138000
+[2025-04-12T11:01:39.079Z] [INFO] 请求: GET /, 参数: {"tab":"status"}
+[2025-04-12T11:01:39.598Z] [INFO] 请求: GET /api/phone/status, 参数: {"mobile":"13800138000"}
+[2025-04-12T11:01:39.600Z] [INFO] 空号检测: 13800138000
+[2025-04-12T11:01:40.698Z] [INFO] 请求: GET /, 参数: {"tab":"online"}
+[2025-04-12T11:01:41.262Z] [INFO] 请求: GET /api/phone/online, 参数: {"mobile":"13800138000"}
+[2025-04-12T11:01:41.263Z] [INFO] 在网状态查询: 13800138000
+[2025-04-12T11:03:06.418Z] [INFO] 请求: GET /favicon.ico, 参数: {}
+[2025-04-12T11:03:42.230Z] [INFO] 风险查询API服务器运行在 http://0.0.0.0:9090/
+[2025-04-12T11:03:42.235Z] [INFO] 可用API:
+[2025-04-12T11:03:42.235Z] [INFO] - 转网查询: http://localhost:9090/api/phone/transfer?mobile=13800138000
+[2025-04-12T11:03:42.236Z] [INFO] - 空号检测: http://localhost:9090/api/phone/status?mobile=13800138000
+[2025-04-12T11:03:42.236Z] [INFO] - 在网状态: http://localhost:9090/api/phone/online?mobile=13800138000
+[2025-04-12T11:03:42.237Z] [INFO] - 失信查询: http://localhost:9090/api/shixin?name=李明&idcard=110101199003075432
+[2025-04-12T11:03:42.237Z] [INFO] - 订阅接口: POST http://localhost:9090/api/subscribe
+[2025-04-12T11:03:54.507Z] [INFO] 请求: GET /, 参数: {"tab":"online"}
+[2025-04-12T11:03:56.783Z] [INFO] 请求: GET /, 参数: {"tab":"shixin"}
+[2025-04-12T11:03:57.634Z] [INFO] 请求: GET /api/shixin, 参数: {"name":"李明","idcard":"110101199003075431"}
+[2025-04-12T11:03:57.635Z] [INFO] 失信人查询: 姓名=李明, 身份证=110101199003075431
+[2025-04-12T11:03:59.118Z] [INFO] 请求: GET /, 参数: {"tab":"subscribe"}
+[2025-04-12T11:04:35.258Z] [INFO] 请求: POST /api/subscribe, 参数: {}
+[2025-04-12T11:04:35.260Z] [INFO] 订阅请求: 姓名=wang, 手机=15821133263, 邮箱=185927382@qq.com
+[2025-04-12T11:04:35.261Z] [INFO] 订阅保存成功: 已写入 C:\Users\18592\Desktop\cursor\1111\subscriptions.json
+[2025-04-12T11:07:24.110Z] [INFO] 风险查询API服务器运行在 http://0.0.0.0:9090/
+[2025-04-12T11:07:24.114Z] [INFO] 可用API:
+[2025-04-12T11:07:24.114Z] [INFO] - 转网查询: http://localhost:9090/api/phone/transfer?mobile=13800138000
+[2025-04-12T11:07:24.115Z] [INFO] - 空号检测: http://localhost:9090/api/phone/status?mobile=13800138000
+[2025-04-12T11:07:24.115Z] [INFO] - 在网状态: http://localhost:9090/api/phone/online?mobile=13800138000
+[2025-04-12T11:07:24.116Z] [INFO] - 失信查询: http://localhost:9090/api/shixin?name=李明&idcard=110101199003075432
+[2025-04-12T11:07:24.116Z] [INFO] - 订阅接口: POST http://localhost:9090/api/subscribe
+[2025-04-12T11:07:27.687Z] [INFO] 请求: GET /, 参数: {}
+[2025-04-12T11:07:29.322Z] [INFO] 请求: GET /api/shixin, 参数: {"name":"李明","idcard":"110101199003075431"}
+[2025-04-12T11:07:29.323Z] [INFO] 失信人查询: 姓名=李明, 身份证=110101199003075431
+[2025-04-12T11:07:31.067Z] [INFO] 请求: GET /, 参数: {"tab":"subscribe"}
+[2025-04-12T11:07:43.009Z] [INFO] 请求: POST /api/subscribe, 参数: {}
+[2025-04-12T11:07:43.012Z] [INFO] 订阅请求: 姓名=wang, 手机=15821133263, 邮箱=wangbo15821133263@gmail.com
+[2025-04-12T11:07:43.016Z] [INFO] 订阅保存成功: 已写入 C:\Users\18592\Desktop\cursor\1111\subscriptions.json
+[2025-04-12T11:07:43.044Z] [INFO] 准备发送邮件到 185927382@qq.com
+[2025-04-12T11:07:43.045Z] [INFO] 邮件主题: 新订阅通知: wang
+[2025-04-12T11:07:43.046Z] [INFO] 邮件内容: 
+          <h2>新订阅用户信息</h2>
+          <p><strong>姓名:</strong> wang</p>
+          <p><strong>手机号:</strong> 15821133263</p>
+          <p><strong>邮箱:</strong> wangbo15821133263@gmail.com</p>
+          <p><strong>公司:</strong> 123</p>
+          <p><strong>订阅时间:</strong> 2025/4/12 19:07:43</p>
+        
+[2025-04-12T11:07:43.046Z] [INFO] 邮件已发送到 185927382@qq.com
+[2025-04-12T11:07:48.907Z] [INFO] 请求: GET /, 参数: {"tab":"online"}
+[2025-04-12T11:07:49.527Z] [INFO] 请求: GET /, 参数: {"tab":"status"}
+[2025-04-12T11:07:50.277Z] [INFO] 请求: GET /, 参数: {"tab":"subscribe"}
+[2025-04-12T11:09:57.989Z] [INFO] 风险查询API服务器运行在 http://0.0.0.0:9090/
+[2025-04-12T11:09:57.995Z] [INFO] 可用API:
+[2025-04-12T11:09:57.995Z] [INFO] - 转网查询: http://localhost:9090/api/phone/transfer?mobile=13800138000
+[2025-04-12T11:09:57.996Z] [INFO] - 空号检测: http://localhost:9090/api/phone/status?mobile=13800138000
+[2025-04-12T11:09:57.996Z] [INFO] - 在网状态: http://localhost:9090/api/phone/online?mobile=13800138000
+[2025-04-12T11:09:57.996Z] [INFO] - 失信查询: http://localhost:9090/api/shixin?name=李明&idcard=110101199003075432
+[2025-04-12T11:09:57.997Z] [INFO] - 订阅接口: POST http://localhost:9090/api/subscribe
+[2025-04-12T11:10:23.063Z] [INFO] 请求: GET /, 参数: {"tab":"subscribe"}
+[2025-04-12T11:10:51.661Z] [INFO] 请求: GET /, 参数: {"tab":"shixin"}
+[2025-04-12T11:10:52.755Z] [INFO] 请求: GET /, 参数: {"tab":"subscribe"}
+[2025-04-12T11:11:04.307Z] [INFO] 请求: POST /api/subscribe, 参数: {}
+[2025-04-12T11:11:04.309Z] [INFO] 订阅请求: 姓名=123, 手机=15821133263, 邮箱=wangbo15821133263@gmail.com
+[2025-04-12T11:11:04.310Z] [INFO] 订阅保存成功: 已写入 C:\Users\18592\Desktop\cursor\1111\subscriptions.json
+[2025-04-12T11:11:04.329Z] [INFO] 准备发送邮件到 185927382@qq.com
+[2025-04-12T11:11:04.330Z] [INFO] 邮件主题: 新订阅通知: 123
+[2025-04-12T11:11:04.331Z] [INFO] 邮件内容: 
+          <h2>新订阅用户信息</h2>
+          <p><strong>姓名:</strong> 123</p>
+          <p><strong>手机号:</strong> 15821133263</p>
+          <p><strong>邮箱:</strong> wangbo15821133263@gmail.com</p>
+          <p><strong>公司:</strong> 123</p>
+          <p><strong>订阅时间:</strong> 2025/4/12 19:11:04</p>
+        
+[2025-04-12T11:11:04.332Z] [INFO] 环境限制：由于PowerShell执行策略限制，无法安装nodemailer模块
+[2025-04-12T11:11:04.332Z] [INFO] 邮件发送说明：要启用实际邮件发送功能，请按以下步骤操作：
+[2025-04-12T11:11:04.333Z] [INFO] 1. 以管理员身份运行PowerShell
+[2025-04-12T11:11:04.334Z] [INFO] 2. 执行命令：Set-ExecutionPolicy RemoteSigned
+[2025-04-12T11:11:04.334Z] [INFO] 3. 执行命令：npm install nodemailer
+[2025-04-12T11:11:04.335Z] [INFO] 4. 配置正确的邮箱信息（SMTP服务器、用户名和授权码）
+[2025-04-12T11:11:04.336Z] [INFO] 订阅信息已保存到日志文件: C:\Users\18592\Desktop\cursor\1111\logs\subscriptions_2025-04-12.log
+[2025-04-12T11:11:04.337Z] [INFO] 邮件模拟发送完成。实际邮件未能发送，请检查上述配置说明
+[2025-04-12T11:11:12.568Z] [INFO] 请求: GET /, 参数: {"tab":"shixin"}
+[2025-04-12T11:11:52.937Z] [INFO] 请求: GET /, 参数: {"tab":"transfer"}
+[2025-04-12T11:11:54.300Z] [INFO] 请求: GET /api/phone/transfer, 参数: {"mobile":"13800138000"}
+[2025-04-12T11:11:54.301Z] [INFO] 转网查询: 13800138000
+[2025-04-12T11:11:56.086Z] [INFO] 请求: GET /, 参数: {"tab":"shixin"}
+[2025-04-12T11:14:36.306Z] [INFO] 风险查询API服务器运行在 http://0.0.0.0:9090/
+[2025-04-12T11:14:36.310Z] [INFO] 可用API:
+[2025-04-12T11:14:36.311Z] [INFO] - 转网查询: http://localhost:9090/api/phone/transfer?mobile=13800138000
+[2025-04-12T11:14:36.311Z] [INFO] - 空号检测: http://localhost:9090/api/phone/status?mobile=13800138000
+[2025-04-12T11:14:36.312Z] [INFO] - 在网状态: http://localhost:9090/api/phone/online?mobile=13800138000
+[2025-04-12T11:14:36.312Z] [INFO] - 失信查询: http://localhost:9090/api/shixin?name=李明&idcard=110101199003075432
+[2025-04-12T11:14:36.312Z] [INFO] - 订阅接口: POST http://localhost:9090/api/subscribe
+[2025-04-12T11:14:42.112Z] [INFO] 请求: GET /, 参数: {}
+[2025-04-12T11:14:43.400Z] [INFO] 请求: GET /api/shixin, 参数: {"name":"李明","idcard":"110101199003075431"}
+[2025-04-12T11:14:43.401Z] [INFO] 失信人查询: 姓名=李明, 身份证=110101199003075431
+[2025-04-12T11:33:24.987Z] [INFO] 风险查询API服务器运行在 http://0.0.0.0:9090/
+[2025-04-12T11:33:24.991Z] [INFO] 可用API:
+[2025-04-12T11:33:24.991Z] [INFO] - 转网查询: http://localhost:9090/api/phone/transfer?mobile=13800138000
+[2025-04-12T11:33:24.992Z] [INFO] - 空号检测: http://localhost:9090/api/phone/status?mobile=13800138000
+[2025-04-12T11:33:24.993Z] [INFO] - 在网状态: http://localhost:9090/api/phone/online?mobile=13800138000
+[2025-04-12T11:33:24.993Z] [INFO] - 失信查询: http://localhost:9090/api/shixin?name=李明&idcard=110101199003075432
+[2025-04-12T11:33:24.994Z] [INFO] - 订阅接口: POST http://localhost:9090/api/subscribe

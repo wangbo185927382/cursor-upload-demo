@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API测试界面</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .api-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+        }
+        .api-section h2 {
+            margin-top: 0;
+            color: #3498db;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            border-left: 4px solid #3498db;
+            min-height: 100px;
+            overflow-x: auto;
+        }
+        .result pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            margin: 0;
+            font-family: Consolas, monospace;
+        }
+        .status {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #777;
+        }
+        .tabs {
+            display: flex;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #f1f1f1;
+            margin-right: 5px;
+            border-radius: 5px 5px 0 0;
+            border: 1px solid #ddd;
+            border-bottom: none;
+        }
+        .tab.active {
+            background-color: #fff;
+            border-bottom: 1px solid #fff;
+            margin-bottom: -1px;
+            font-weight: bold;
+            color: #3498db;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>API测试界面</h1>
+        
+        <div class="tabs">
+            <div class="tab active" onclick="openTab('tab1')">手机号转网查询</div>
+            <div class="tab" onclick="openTab('tab2')">空号检测</div>
+            <div class="tab" onclick="openTab('tab3')">在网状态查询</div>
+            <div class="tab" onclick="openTab('tab4')">失信人查询</div>
+        </div>
+        
+        <div id="tab1" class="tab-content active">
+            <div class="api-section">
+                <h2>手机号转网查询</h2>
+                <div class="form-group">
+                    <label for="mobile1">手机号码：</label>
+                    <input type="text" id="mobile1" placeholder="请输入手机号码" value="13800138000">
+                </div>
+                <button onclick="checkTransfer()">查询</button>
+                <div class="status" id="status1"></div>
+                <div class="result">
+                    <pre id="result1">查询结果将显示在这里...</pre>
+                </div>
+            </div>
+        </div>
+        
+        <div id="tab2" class="tab-content">
+            <div class="api-section">
+                <h2>空号检测</h2>
+                <div class="form-group">
+                    <label for="mobile2">手机号码：</label>
+                    <input type="text" id="mobile2" placeholder="请输入手机号码" value="13800138000">
+                </div>
+                <button onclick="checkStatus()">查询</button>
+                <div class="status" id="status2"></div>
+                <div class="result">
+                    <pre id="result2">查询结果将显示在这里...</pre>
+                </div>
+            </div>
+        </div>
+        
+        <div id="tab3" class="tab-content">
+            <div class="api-section">
+                <h2>在网状态查询</h2>
+                <div class="form-group">
+                    <label for="mobile3">手机号码：</label>
+                    <input type="text" id="mobile3" placeholder="请输入手机号码" value="13800138000">
+                </div>
+                <button onclick="checkOnline()">查询</button>
+                <div class="status" id="status3"></div>
+                <div class="result">
+                    <pre id="result3">查询结果将显示在这里...</pre>
+                </div>
+            </div>
+        </div>
+        
+        <div id="tab4" class="tab-content">
+            <div class="api-section">
+                <h2>失信人查询</h2>
+                <div class="form-group">
+                    <label for="name">姓名：</label>
+                    <input type="text" id="name" placeholder="请输入姓名" value="王博">
+                </div>
+                <div class="form-group">
+                    <label for="idcard">身份证号码：</label>
+                    <input type="text" id="idcard" placeholder="请输入身份证号码" value="620102198705150317">
+                </div>
+                <button onclick="checkShixin()">查询</button>
+                <div class="status" id="status4"></div>
+                <div class="result">
+                    <pre id="result4">查询结果将显示在这里...</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openTab(tabId) {
+            // 隐藏所有标签内容
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(tab => tab.classList.remove('active'));
+            
+            // 移除所有标签的活动状态
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            
+            // 显示选中的标签内容
+            document.getElementById(tabId).classList.add('active');
+            
+            // 设置选中标签的活动状态
+            event.currentTarget.classList.add('active');
+        }
+        
+        function formatJSON(json) {
+            try {
+                return JSON.stringify(json, null, 2);
+            } catch (e) {
+                return json;
+            }
+        }
+        
+        async function makeAPICall(url, statusElement, resultElement) {
+            statusElement.textContent = "正在查询...";
+            try {
+                const startTime = new Date().getTime();
+                const response = await fetch(url);
+                const endTime = new Date().getTime();
+                const data = await response.json();
+                
+                resultElement.textContent = formatJSON(data);
+                statusElement.textContent = `查询完成，耗时 ${endTime - startTime} 毫秒`;
+                
+                return data;
+            } catch (error) {
+                resultElement.textContent = `查询出错: ${error.message}`;
+                statusElement.textContent = "查询失败";
+                return null;
+            }
+        }
+        
+        async function checkTransfer() {
+            const mobile = document.getElementById('mobile1').value;
+            if (!mobile) {
+                document.getElementById('result1').textContent = "请输入手机号码";
+                return;
+            }
+            
+            const url = `http://localhost:9090/api/phone/transfer?mobile=${encodeURIComponent(mobile)}`;
+            await makeAPICall(url, document.getElementById('status1'), document.getElementById('result1'));
+        }
+        
+        async function checkStatus() {
+            const mobile = document.getElementById('mobile2').value;
+            if (!mobile) {
+                document.getElementById('result2').textContent = "请输入手机号码";
+                return;
+            }
+            
+            const url = `http://localhost:9090/api/phone/status?mobile=${encodeURIComponent(mobile)}`;
+            await makeAPICall(url, document.getElementById('status2'), document.getElementById('result2'));
+        }
+        
+        async function checkOnline() {
+            const mobile = document.getElementById('mobile3').value;
+            if (!mobile) {
+                document.getElementById('result3').textContent = "请输入手机号码";
+                return;
+            }
+            
+            const url = `http://localhost:9090/api/phone/online?mobile=${encodeURIComponent(mobile)}`;
+            await makeAPICall(url, document.getElementById('status3'), document.getElementById('result3'));
+        }
+        
+        async function checkShixin() {
+            const name = document.getElementById('name').value;
+            const idcard = document.getElementById('idcard').value;
+            
+            if (!name || !idcard) {
+                document.getElementById('result4').textContent = "请输入姓名和身份证号码";
+                return;
+            }
+            
+            const url = `http://localhost:9090/api/shixin?name=${encodeURIComponent(name)}&idcard=${encodeURIComponent(idcard)}`;
+            await makeAPICall(url, document.getElementById('status4'), document.getElementById('result4'));
+        }
+        
+        // 初始化时自动执行一次查询
+        window.onload = function() {
+            // 自动执行转网查询
+            checkTransfer();
+        };
+    </script>
+</body>
+</html> 

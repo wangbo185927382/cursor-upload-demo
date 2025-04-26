@@ -1,0 +1,26 @@
+{
+  "name": "risk-query-api",
+  "version": "1.0.2",
+  "description": "风险查询API服务，包括转网查询、空号检测、在网状态查询和失信人查询",
+  "main": "simple_api_server.js",
+  "scripts": {
+    "start": "node simple_api_server.js",
+    "pm2-start": "pm2 start simple_api_server.js --name risk-api",
+    "deploy": "powershell -File deploy.ps1",
+    "deploy-linux": "bash deploy.sh"
+  },
+  "keywords": [
+    "api",
+    "信用查询",
+    "转网查询",
+    "空号检测"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "nodemailer": "^6.9.7"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}

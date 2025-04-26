@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>逾期客户智能分类系统</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- 添加 xlsx 库用于处理 Excel 文件 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <!-- 添加在其他CSS和JS引用之后 -->
+    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <!-- 客户画像评分部分 -->
+            <div class="section credit-check-section">
+                <h2>逾期客户智能分类</h2>
+                
+                <!-- 添加批量上传部分 -->
+                <div class="batch-upload-section">
+                    <button class="template-download-btn">下载分类模板</button>
+                    <input type="file" id="batchUpload" accept=".xlsx,.xls" style="display: none;">
+                    <button class="batch-upload-btn" onclick="document.getElementById('batchUpload').click()">
+                        批量导入
+                    </button>
+                </div>
+
+                <!-- 单个查询表单 -->
+                <div class="credit-check-form">
+                    <h3>客户信息录入</h3>
+                    <div class="input-group">
+                        <div class="input-field">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="nameInput" placeholder="请输入姓名">
+                            <span class="validation-tip"></span>
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-id-card"></i>
+                            <input type="text" id="idCardInput" placeholder="请输入身份证号">
+                            <span class="validation-tip"></span>
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-mobile-alt"></i>
+                            <input type="text" id="phoneInput" placeholder="请输入手机号">
+                            <span class="validation-tip"></span>
+                        </div>
+                        <button onclick="checkCredit()" class="submit-btn">
+                            <i class="fas fa-search"></i>
+                            智能分类
+                        </button>
+                    </div>
+                    <!-- 评分显示区域 -->
+                    <div id="creditScore" class="credit-score" style="display: none;">
+                        <div class="score-circle">
+                            <span class="category-number"></span>
+                            <span class="category-label">风险类别</span>
+                        </div>
+                        
+                        <div class="key-indicators">
+                            <div class="indicator-item">
+                                <span class="indicator-label">风险等级</span>
+                                <span class="indicator-value risk-level">--</span>
+                            </div>
+                            <div class="indicator-item">
+                                <span class="indicator-label">可联系性</span>
+                                <span class="indicator-value contact-status">--</span>
+                            </div>
+                            <div class="indicator-item">
+                                <span class="indicator-label">失信状态</span>
+                                <span class="indicator-value credit-status">--</span>
+                            </div>
+                        </div>
+
+                        <!-- 风险详情区域 -->
+                        <div class="risk-details">
+                            <h4>风险分析</h4>
+                            <div class="risk-analysis"></div>
+                        </div>
+
+                        <!-- 处置建议区域 -->
+                        <div class="handling-suggestions">
+                            <h4>处置建议</h4>
+                            <div class="suggestion-list"></div>
+                        </div>
+                    </div>
+                    <!-- 预测结果显示 -->
+                    <div id="predictionResult" class="prediction-result" style="display: none;">
+                        <div class="prediction-card">
+                            <h3>回款预测</h3>
+                            <div class="prediction-score">
+                                <span class="prediction-label">预计回款概率：</span>
+                                <span class="prediction-value">0%</span>
+                            </div>
+                            <div class="overdue-prediction">
+                                <span class="prediction-label">预计逾期概率：</span>
+                                <span class="overdue-value">0%</span>
+                            </div>
+                            <div class="prediction-level">
+                                <span class="level-label">风险等级：</span>
+                                <span class="level-value">未知</span>
+                            </div>
+                            <div class="score-level">
+                                <span class="level-label">评分等级：</span>
+                                <span class="score-level-value">未知</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 查询结果展示 -->
+                <div id="creditResult" class="credit-result">
+                    <!-- 查询结果将在这里显示 -->
+                </div>
+
+                <!-- 添加结果显示区域 -->
+                <div class="results-section" style="display: none;">
+                    <h3>批量分类结果</h3>
+                    <div class="results-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>姓名</th>
+                                    <th>身份证号</th>
+                                    <th>手机号</th>
+                                    <th>风险类别</th>
+                                    <th>风险等级</th>
+                                    <th>被执行人状态</th>
+                                    <th>手机在网情况</th>
+                                    <th>处置建议</th>
+                                </tr>
+                            </thead>
+                            <tbody id="resultsBody">
+                            </tbody>
+                        </table>
+                    </div>
+                    <button class="download-results-btn">导出分类结果</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 
